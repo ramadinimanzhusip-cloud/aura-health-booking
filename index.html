@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ebf2ee" />
+    <meta name="description" content="Thoughtful, physician-led longevity care. Choose your service, meet your specialist, and plan your visit with Aura Health Lab." />
+    <meta property="og:title" content="Book a visit · Aura Health Lab" />
+    <meta property="og:description" content="A clearer picture of your health starts here." />
+    <meta property="og:type" content="website" />
+    <title>Book a visit · Aura Health Lab</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to booking</a>
+    <header class="site-header">
+      <div class="header-top">
+        <a class="brand" href="/" aria-label="Aura Health Lab home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M20 5.5C13.3 13.3 9 18 9 24a11 11 0 0 0 22 0c0-6-4.3-10.7-11-18.5Z" stroke="currentColor" stroke-width="1.7"/><path d="M15.5 25.5c1.3 2.4 3 3.6 5.8 3.6 2 0 3.8-.8 5.1-2.2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          </span>
+          <span class="brand-copy"><strong>AURA</strong><small>HEALTH LAB</small></span>
+        </a>
+        <div class="header-actions">
+          <span class="header-note"><span class="status-dot"></span> Concierge care, on your time</span>
+          <button class="history-button" id="historyButton" type="button">
+            <svg aria-hidden="true" viewBox="0 0 20 20" fill="none"><path d="M3.5 6.5h13m-11 0 .7 9h7.6l.7-9M8 6.5V4.7c0-.7.6-1.2 1.3-1.2h1.4c.7 0 1.3.5 1.3 1.2v1.8M8.1 9.2v3.6m3.8-3.6v3.6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>My visits</span><span class="history-count" id="historyCount" aria-label="0 saved visits">0</span>
+          </button>
+        </div>
+      </div>
+      <nav class="progress-nav" aria-label="Booking progress" id="progressNav"></nav>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section class="intro-section" aria-labelledby="introTitle">
+        <div class="intro-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> YOUR NEXT CHAPTER, WELL</p>
+          <h1 id="introTitle">Better years begin with a <em>clearer picture.</em></h1>
+          <p class="intro-description">Personalized, physician-led care to help you understand your health today—and feel more confident about tomorrow.</p>
+          <div class="trust-row">
+            <div class="avatar-stack" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=80&h=80&q=80" alt="" />
+              <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=80&h=80&q=80" alt="" />
+              <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=80&h=80&q=80" alt="" />
+            </div>
+            <span><strong>Care, centered on you</strong><small>Meet the people behind your plan</small></span>
+          </div>
+        </div>
+        <div class="intro-visual">
+          <img class="hero-photo" src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1400&q=85" alt="A physician reviewing a patient's health results in a bright clinic" />
+          <div class="photo-shade"></div>
+          <div class="photo-caption"><span class="caption-icon" aria-hidden="true">✳</span><span><strong>Care, with the whole picture in mind.</strong><small>Evidence-led. Personal by design.</small></span></div>
+          <div class="visual-index">01 <span></span> 03</div>
+        </div>
+      </section>
+
+      <section class="booking-section" aria-label="Book your appointment">
+        <div class="section-heading">
+          <div><p class="eyebrow"><span class="eyebrow-line"></span> A FEW THOUGHTFUL STEPS</p><h2>Plan your visit</h2></div>
+          <p class="privacy-note"><svg aria-hidden="true" viewBox="0 0 20 20" fill="none"><path d="M10 2.8 4.3 5v4.3c0 3.5 2.4 6.5 5.7 7.9 3.3-1.4 5.7-4.4 5.7-7.9V5L10 2.8Z" stroke="currentColor" stroke-width="1.4"/><path d="m7.6 9.9 1.6 1.6 3.3-3.4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Your health details stay private</p>
+        </div>
+        <div class="booking-grid">
+          <div class="wizard-card" id="wizardCard" aria-live="polite"></div>
+          <aside class="summary-card" id="summaryCard" aria-label="Appointment summary"></aside>
+        </div>
+      </section>
+
+      <section class="reassurance-strip" aria-label="Our approach">
+        <div class="reassurance-item"><span class="reassurance-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3.5c-4 0-7.2 3.2-7.2 7.2S8 18 12 18s7.2-3.3 7.2-7.3S16 3.5 12 3.5Z" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v4l2.6 1.8M8 20.5h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span><span><strong>Time well spent</strong><small>Unhurried, one-to-one care</small></span></div>
+        <div class="reassurance-item"><span class="reassurance-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3.2 5 6v5.3c0 4.3 3 7.8 7 9.5 4-1.7 7-5.2 7-9.5V6l-7-2.8Z" stroke="currentColor" stroke-width="1.5"/><path d="m9 12 2 2 4-4.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>Clinician led</strong><small>Thoughtful expertise at every step</small></span></div>
+        <div class="reassurance-item"><span class="reassurance-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12s2.8-6 8-6 8 6 8 6-2.8 6-8 6-8-6-8-6Z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="2.4" stroke="currentColor" stroke-width="1.5"/></svg></span><span><strong>Clear by design</strong><small>Know what to expect, from day one</small></span></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><a class="brand footer-brand" href="/" aria-label="Aura Health Lab home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 5.5C13.3 13.3 9 18 9 24a11 11 0 0 0 22 0c0-6-4.3-10.7-11-18.5Z" stroke="currentColor" stroke-width="1.7"/><path d="M15.5 25.5c1.3 2.4 3 3.6 5.8 3.6 2 0 3.8-.8 5.1-2.2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span><span class="brand-copy"><strong>AURA</strong><small>HEALTH LAB</small></span></a><p>Thoughtful care for a life well lived.</p><span class="footer-location">NEW YORK · EST. 2018</span></footer>
+
+    <dialog class="history-dialog" id="historyDialog" aria-labelledby="historyTitle">
+      <div class="dialog-head"><div><p class="eyebrow"><span class="eyebrow-line"></span> YOUR AURA JOURNEY</p><h2 id="historyTitle">Saved visits</h2></div><button class="icon-button" id="closeHistory" type="button" aria-label="Close saved visits">×</button></div>
+      <div id="historyContent"></div>
+    </dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
