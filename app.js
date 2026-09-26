@@ -300,7 +300,7 @@ function validateForm() {
     if (Number.isNaN(birth.getTime()) || birth >= today) errors.birthDate = 'Choose a date before today.';
   }
   if (values.smsNotice && digits.length < 7) errors.phone = 'Enter a valid phone number to receive text reminders.';
-  if (!values.consent) errors.consent = 'Please agree so we can prepare for your visit.';
+  if (!values.consent) errors.consent = 'Please confirm to continue.';
   state.errors = errors;
   if (!Object.keys(errors).length) return true;
   render();
